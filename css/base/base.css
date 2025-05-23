@@ -1,0 +1,15 @@
+ 
+ :root { 
+  --color-primary : rgb(172, 142, 108);
+--color-secondary: #5c8176;
+--size: 2rem; 
+--shadow: 0 0 0.2rem 0.4rem #525252;
+ }
+ 
+ 
+ body,
+   body * { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;} 
+   

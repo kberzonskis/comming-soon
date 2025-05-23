@@ -6,22 +6,37 @@
     <title>ComingSoon</title>
     
     
-<link rel="icon" type="image/png" href="./Favicon/favicon-96x96.png" sizes="96x96" />
+    <!--base/layout-->
+<link rel="stylesheet" href="./css/base/base.css"> 
+<link rel="stylesheet" href="./css/base/layout.css"> 
+    <!--vendor-->
+<link rel="stylesheet" href="./css/Components/Vendor/font-awesome.main.css">
+
+
+    <!--components-->
+
+<link rel="stylesheet" href="./css/Components/clock.css"> 
+<link rel="stylesheet" href="./css/Components/mouse.css"> 
+<link rel="stylesheet" href="./css/Components/progress-bar.css"> 
+<link rel="stylesheet" href="./css/Components/form.css"> 
+
+    <!--costum-->
+<link rel="stylesheet" href="./css/comming-soon.css">
+
+<link rel="icon" type="image/png" href="./Favicon/favicon-96x96.png.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
-<link rel="stylesheet" href="./css/comming-soon.css">
-<link rel="stylesheet" href="./css/Components/layout.css"> 
-<link rel="stylesheet" href="./css/Components/clock.css"> 
-<link rel="stylesheet" href="./css/Components/mouse.css"> 
+
+
 
 </head>
 
 
 <body>
-<header  class="container bg-blue"    >
-<div class="row-short">
+<header  class="container bg-blue hero"    >
+<div class="row-short pom">
    <img class = "logo" src="./img/MarLOG.png" alt="logo">
     <h1 class="main-title">Coming Soon</h1>
     <p class="main-description">We are working hard to finish our project. Stay tuned!</p>
@@ -47,10 +62,23 @@
         <div class="label">Seconds</div>
      </div>
     </div>
-
+  <form class="form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" value="" maxlength="50" placeholder="Your email" required>
+                                         
+                        
+                    </div>
+                </div>
+                <div class="form-row">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </form>
     <div class = "mouse"></div>
-        
-    
+
+
+            
   </div>  
 </header>
 
@@ -63,18 +91,91 @@
          Excepturi aperiam ab quos corrupti sit numquam corporis ipsum
           laudantium. Quibusdam provident earum blanditiis aperiam esse
           voluptatem at ad magnam numquam sapiente! </p>
+          
+          <div class="progress-bar"> 
+          <div class="top">
+               <div>UX design</div>
+               <div>60%</div> 
+                   </div>
+                <div class="bottom">
+                        <div class="bar" style="width: 60%;">
+                            <div class="value"></div>
+                        </div>
+
+                    </div>
                 </div>
-    
+                <div class="progress-bar">
+                    <div class="top">
+                        <div>Web design</div>
+                        <div>85%</div>
+                                            </div>
+                    <div class="bottom">
+                        <div class="bar" style="width: 85%;">
+                            <div class="value"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="top">
+                        <div>Web development</div>
+                        <div>15%</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bar" style="width: 15%;">
+                            <div class="value"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                   
         <div class="column">
             <h2 class="section-title"> Have any question</h2>
      <p class="section-description">  Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
         Totam id ut provident reiciendis cum officiis   <a href="mailto:mano@pastas.lt"> mano@pastas.lt</a>  quod maxime nisi 
-                 mollitia, libero quae tempore inventore eius.</p>  
+                 mollitia, libero quae tempore inventore eius.</p> 
+            <form class="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">Name</label>
+                            <input id="first-name" type="text" name="name" value="Vardenis" placeholder="Your name" maxlength="25" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" value="" maxlength="50" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" minlength="20" maxlength="1000" placeholder="Your message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit">Send message</button>
+                    </div>
+                </form>
+
+            </div>
+
       </div>
     </div>      
 
 </main>
 <footer class="container bg-blue" >
+       <div class="row">
+       <div class="rov socials">
+                 <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-dribbble"></a>
+                <a href="#" class="fa fa-tumblr"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-rss"></a>
+                <a href="#" class="fa fa-rss"></a>
+       </div>
+        <a href="#" class="back-to-top fa fa-angle-up"></a>
+    </div>
+          
 <div  class="row-short"> 
    <img class="logo-white" src="./img/Matrox logo.png" alt="logo">
      <div class="text-trio"> 
